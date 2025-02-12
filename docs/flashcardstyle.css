@@ -9,15 +9,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: transparent;
+    background-color: transparent; /* ✅ Remove unwanted background */
 }
 
+
 .flashcard-container {
-    width: 100%;
-    max-width: 400px;
-    height: 250px;
-    perspective: 1000px;
+    width: 90%;  /* ✅ Make it fit better inside the question box */
+    max-width: 300px;  /* ✅ Prevents it from being too large */
+    height: 200px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .flashcard {
     width: 100%;
@@ -34,9 +38,9 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #FFB6C1; /* Light red (pinkish) */
+    background: rgba(255, 182, 193, 0.7); /* ✅ Light red with slight transparency */
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem; /* ✅ Make it more readable */
     font-weight: bold;
     display: flex;
     justify-content: center;
