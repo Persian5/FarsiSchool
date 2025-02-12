@@ -52,4 +52,3 @@ body {
 .flashcard.flipped {
     transform: rotateY(180deg);
 }
-
