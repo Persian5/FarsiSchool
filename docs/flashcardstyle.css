@@ -9,9 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: transparent; /* ✅ Remove unwanted background */
+    background-color: transparent; /* ✅ Keeps it blendable with Iranopedia theme */
 }
-
 
 .flashcard-container {
     width: 90%;  /* ✅ Make it fit better inside the question box */
@@ -21,7 +20,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 
 .flashcard {
     width: 100%;
@@ -38,21 +36,29 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 182, 193, 0.7); /* ✅ Light red with slight transparency */
-    color: white;
-    font-size: 2.5rem; /* ✅ Make it more readable */
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
+    font-size: 2rem; /* ✅ Keeps it readable */
+    font-weight: bold;
     backface-visibility: hidden;
 }
 
+/* ✅ Farsi Side (Front) */
+.flashcard .front {
+    background: #2E7D32; /* Dark Green */
+    color: white; /* White Text */
+}
+
+/* ✅ English Side (Back) */
 .flashcard .back {
+    background: white; /* White Background */
+    color: #2E7D32; /* Dark Green Text */
     transform: rotateY(180deg);
 }
 
+/* ✅ Flipping Animation */
 .flashcard.flipped {
     transform: rotateY(180deg);
 }
