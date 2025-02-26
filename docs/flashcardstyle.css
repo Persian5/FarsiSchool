@@ -47,14 +47,14 @@ body {
 
 /* ✅ Farsi Side (Front) */
 .flashcard .front {
-    background: #2F855A; /* Dark Green */
-    color: #EDF2F7; /* White Text */
+    background: #EDF2F7; /* White Text */
+    color: #2F855A; /* Dark Green Text */
 }
 
 /* ✅ English Side (Back) */
 .flashcard .back {
-    background: #EDF2F7; /* White Background */
-    color: #2F855A; /* Dark Green Text */
+    background: #2F855A; /* Dark Green Text */
+    color: #EDF2F7; /* White Text */
     transform: rotateY(180deg);
 }
 
