@@ -4,18 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* ✅ Prevents scrolling & extra space */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: transparent; /* ✅ Keeps it blendable with Iranopedia theme */
+    background-color: transparent; /* ✅ Keeps it blendable */
 }
 
 .flashcard-container {
-    width: 90%;  /* ✅ Make it fit better inside the question box */
-    max-width: 300px;  /* ✅ Prevents it from being too large */
-    height: 200px;  
+    width: 100%;  /* ✅ Makes it take full iframe space */
+    max-width: 300px;  
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,25 +42,23 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    font-size: 2rem; /* ✅ Keeps it readable */
+    font-size: 2rem;
     font-weight: bold;
     backface-visibility: hidden;
 }
 
 /* ✅ English Side (Front) */
 .flashcard .front {
-    background: #EDF2F7; /* Light Background */
-    color: #2F855A; /* Dark Green Text */
+    background: #EDF2F7;
+    color: #2F855A;
 }
 
 /* ✅ Farsi Side (Back) */
 .flashcard .back {
-    background: #2F855A; /* Dark Green Background */
-    color: #EDF2F7; /* White Text */
+    background: #2F855A;
+    color: #EDF2F7;
     transform: rotateY(180deg);
 }
-
-
 
 /* ✅ Flipping Animation */
 .flashcard.flipped {
