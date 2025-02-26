@@ -45,18 +45,19 @@ body {
     backface-visibility: hidden;
 }
 
-/* ✅ Farsi Side (Front) */
+/* ✅ English Side (Front) */
 .flashcard .front {
-    background: #EDF2F7; /* White Text */
-    color: #2F855A; /* Dark Green Text */
+    background: #2F855A; /* Dark Green Background */
+    color: #EDF2F7; /* White Text */
 }
 
-/* ✅ English Side (Back) */
+/* ✅ Farsi Side (Back) */
 .flashcard .back {
-    background: #2F855A; /* Dark Green Text */
-    color: #EDF2F7; /* White Text */
+    background: #EDF2F7; /* Light Background */
+    color: #2F855A; /* Dark Green Text */
     transform: rotateY(180deg);
 }
+
 
 /* ✅ Flipping Animation */
 .flashcard.flipped {
