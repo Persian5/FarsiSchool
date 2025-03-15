@@ -88,12 +88,12 @@ html, body {
     margin-top: 10px;
     width: 300px;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
-    background: #f0f0f0 !important; /* ✅ Force background color */
+    background: white;
     color: black;
     border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
     font-family: inherit;
     cursor: pointer;
@@ -101,6 +101,6 @@ html, body {
 
 /* ✅ Remove hover effect */
 .play-sound-btn:hover {
-    background: #f0f0f0 !important; /* ✅ Keep it the same */
+    background: #f0f0f0;
 }
 
