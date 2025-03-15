@@ -25,9 +25,19 @@
     </div>
 
     <!-- Play Sound Button Below Flashcard -->
-    <button class="play-sound-btn" onclick="playAudio('salam.mp3')">Play Sound</button>
+    <button class="play-sound-btn" onclick="playSound()">Play Sound</button>
 
-    <script src="../../../flashcardscript.js"></script>
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+
+        function playSound() {
+            let flashcard = document.querySelector('.flashcard');
+            let audioFile = flashcard.classList.contains('flipped') ? '../audios1/salam.mp3' : '../audios1/hello.mp3';
+            new Audio(audioFile).play();
+        }
+    </script>
 
 </body>
 </html>
