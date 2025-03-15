@@ -83,18 +83,24 @@ html, body {
     color: #EDF2F7;
 }
 
-/* ✅ "Play Sound" Button */
+/* ✅ "Play Sound" Button (No Hover Effect) */
 .play-sound-btn {
     margin-top: 10px;
     width: 300px;
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
-    background: #f0f0f0;
+    background: #f0f0f0 !important; /* ✅ Force background color */
     color: black;
     border: 2px solid black;
     border-radius: 8px;
     text-align: center;
     font-family: inherit;
+    cursor: pointer;
+}
+
+/* ✅ Remove hover effect */
+.play-sound-btn:hover {
+    background: #f0f0f0 !important; /* ✅ Keep it the same */
 }
 
