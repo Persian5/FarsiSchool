@@ -3,8 +3,7 @@ function flipCard(card) {
 }
 
 // Function to play the correct MP3 file
-function playAudio(file, event) {
-    event.stopPropagation(); // Prevent flip when clicking the sound button
-    let audio = new Audio(`../audios1/${file}`); // Adjusted to match your structure
+function playAudio(file) {
+    let audio = new Audio(`../audios1/${file}`);
     audio.play();
 }
