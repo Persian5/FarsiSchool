@@ -13,17 +13,21 @@
             <!-- Front (English) -->
             <div class="front">
                 <p>Hello</p>
-                <button onclick="playAudio('hello.mp3', event)">🔊</button>
+                <div class="reveal-bar">Click the card to flip</div>
             </div>
             
             <!-- Back (Persian) -->
             <div class="back">
                 <p>Salam</p>
-                <button onclick="playAudio('salam.mp3', event)">🔊</button>
+                <div class="reveal-bar">Click the card to flip</div>
             </div>
         </div>
     </div>
 
+    <!-- Play Sound Button (Separate Below Flashcard) -->
+    <button class="play-sound-btn" onclick="playAudio('salam.mp3')">Play Sound</button>
+
     <script src="../../../flashcardscript.js"></script>
+
 </body>
 </html>
