@@ -90,15 +90,11 @@ html, body {
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
-    background: white;
+    background: #f0f0f0;
     color: black;
     border: 2px solid black;
     border-radius: 8px;
-    cursor: pointer;
     text-align: center;
     font-family: inherit;
 }
 
-.play-sound-btn:hover {
-    background: #f0f0f0;
-}
