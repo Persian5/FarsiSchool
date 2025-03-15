@@ -10,8 +10,17 @@
 
     <div class="flashcard-container">
         <div class="flashcard" onclick="flipCard(this)">
-            <div class="front">Hello</div>
-            <div class="back">Salam</div>
+            <!-- Front (English) -->
+            <div class="front">
+                <p>Hello</p>
+                <button onclick="playAudio('hello.mp3', event)">🔊</button>
+            </div>
+            
+            <!-- Back (Persian) -->
+            <div class="back">
+                <p>Salam</p>
+                <button onclick="playAudio('salam.mp3', event)">🔊</button>
+            </div>
         </div>
     </div>
 
